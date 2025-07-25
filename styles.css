@@ -108,8 +108,10 @@ header .container {
     width: auto;
     filter: none;
     transition: var(--transition);
-    background: transparent;
+    background: rgba(250, 248, 243, 0.95);
     mix-blend-mode: normal;
+    border-radius: 8px;
+    padding: 8px;
 }
 
 .logo:hover {
