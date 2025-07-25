@@ -191,12 +191,13 @@ header .container {
 }
 
 /* Sekcja hero z nowoczesnym designem */
+
 .hero {
     background: linear-gradient(135deg,
         rgba(30, 58, 95, 0.4) 0%,
         rgba(21, 43, 71, 0.5) 50%,
         rgba(44, 74, 112, 0.4) 100%),
-        url('https://cdn.builder.io/api/v1/image/assets%2F06d7d275ef834dcd8a8b9ca830b4009c%2Fdb988434a24a4bd1931739cee3a581b8?format=webp&width=800') no-repeat left center;
+        url('hero-banner.png') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     color: var(--warm-white);
@@ -209,7 +210,6 @@ header .container {
     overflow: hidden;
     scroll-margin-top: 120px;
 }
-
 .hero::before {
     content: '';
     position: absolute;
@@ -603,12 +603,26 @@ footer a:hover {
         height: 50px;
     }
 
-    .hero {
-        min-height: 50vh;
-        padding: 30px 0;
-    }
-
-    .hero h1 {
+    
+.hero {
+    background: linear-gradient(135deg,
+        rgba(30, 58, 95, 0.4) 0%,
+        rgba(21, 43, 71, 0.5) 50%,
+        rgba(44, 74, 112, 0.4) 100%),
+        url('hero-banner.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--warm-white);
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    scroll-margin-top: 120px;
+}
+.hero h1 {
         font-size: 1.8rem;
         padding: 0 10px;
     }
@@ -699,13 +713,26 @@ footer a:hover {
         height: 60px;
     }
 
-    .hero {
-        background-attachment: scroll;
-        min-height: 55vh;
-        padding: 35px 0;
-    }
-
-    .hero h1 {
+    
+.hero {
+    background: linear-gradient(135deg,
+        rgba(30, 58, 95, 0.4) 0%,
+        rgba(21, 43, 71, 0.5) 50%,
+        rgba(44, 74, 112, 0.4) 100%),
+        url('hero-banner.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--warm-white);
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    scroll-margin-top: 120px;
+}
+.hero h1 {
         font-size: 2.2rem;
     }
 
@@ -802,3 +829,4 @@ footer a:hover {
         scroll-behavior: smooth;
     }
 }
+
