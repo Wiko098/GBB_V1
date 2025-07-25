@@ -325,7 +325,8 @@ header .container {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-xl);
     width: 100%;
-    min-height: 400px;
+    min-height: 300px;
+    max-height: 400px;
     object-fit: cover;
     transition: var(--transition);
 }
@@ -619,6 +620,20 @@ footer a:hover {
         margin-bottom: 30px;
     }
 
+    #about .about-image {
+        order: -1;
+        margin-bottom: 15px;
+    }
+
+    #about .about-image img {
+        min-height: 200px;
+        max-height: 250px;
+    }
+
+    #about .about-image::before {
+        display: none;
+    }
+
     .service {
         padding: 24px 20px;
     }
@@ -703,7 +718,17 @@ footer a:hover {
 
     #about .about-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 25px;
+    }
+
+    #about .about-image {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    #about .about-image img {
+        min-height: 250px;
+        max-height: 300px;
     }
 
     .services-grid {
