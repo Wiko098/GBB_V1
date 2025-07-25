@@ -193,10 +193,10 @@ header .container {
 /* Sekcja hero z nowoczesnym designem */
 .hero {
     background: linear-gradient(135deg,
-        rgba(30, 58, 95, 0.7) 0%,
-        rgba(21, 43, 71, 0.8) 50%,
-        rgba(44, 74, 112, 0.7) 100%),
-        url('https://cdn.builder.io/api/v1/image/assets%2F06d7d275ef834dcd8a8b9ca830b4009c%2Fdb988434a24a4bd1931739cee3a581b8?format=webp&width=800') no-repeat center center;
+        rgba(30, 58, 95, 0.4) 0%,
+        rgba(21, 43, 71, 0.5) 50%,
+        rgba(44, 74, 112, 0.4) 100%),
+        url('https://cdn.builder.io/api/v1/image/assets%2F06d7d275ef834dcd8a8b9ca830b4009c%2Fdb988434a24a4bd1931739cee3a581b8?format=webp&width=800') no-repeat left center;
     background-size: cover;
     background-attachment: fixed;
     color: var(--warm-white);
