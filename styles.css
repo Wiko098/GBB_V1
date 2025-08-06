@@ -337,13 +337,29 @@ header .container {
     transform: translateY(-8px);
 }
 
-/* Sekcja Oferta z układem podobnym do "O nas" */
+/* Sekcja Oferta z układem identycznym jak "O nas" */
 #offer .offer-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 60px;
     margin-top: 40px;
+}
+
+#offer .offer-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#offer .offer-text p {
+    margin-bottom: 24px;
+    color: var(--medium-brown);
+}
+
+#offer .offer-text p:first-child {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--dark-brown);
 }
 
 #offer .offer-image {
@@ -358,7 +374,7 @@ header .container {
     left: -20px;
     right: 20px;
     bottom: 20px;
-    background: linear-gradient(135deg, var(--primary-gold), var(--navy-blue));
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-teal));
     border-radius: var(--border-radius);
     z-index: -1;
 }
@@ -375,19 +391,6 @@ header .container {
 
 #offer .offer-image img:hover {
     transform: translateY(-8px);
-}
-
-#offer .offer-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-#offer .offer-text p {
-    margin-bottom: 24px;
-    color: var(--medium-brown);
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--dark-brown);
 }
 
 /* Sekcja Usługi z nowoczesnymi kartami */
