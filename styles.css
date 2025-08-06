@@ -722,14 +722,6 @@ footer a:hover {
         display: none;
     }
 
-    #offer .offer-features {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-
-    #offer .feature {
-        padding: 15px;
-    }
 
     .service {
         padding: 24px 20px;
