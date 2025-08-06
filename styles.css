@@ -755,6 +755,34 @@ footer a:hover {
         display: none;
     }
 
+    #offer .offer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #offer .offer-image {
+        order: -1;
+        margin-bottom: 15px;
+    }
+
+    #offer .offer-image img {
+        min-height: 200px;
+        max-height: 250px;
+    }
+
+    #offer .offer-image::before {
+        display: none;
+    }
+
+    #offer .offer-features {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    #offer .feature {
+        padding: 15px;
+    }
+
     .service {
         padding: 24px 20px;
     }
