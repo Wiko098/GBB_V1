@@ -282,7 +282,8 @@ header .container {
 }
 
 /* Sekcja O nas z nowoczesnym układem */
-#about .about-content {
+#about .about-content,
+#offer .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -290,81 +291,32 @@ header .container {
     margin-top: 40px;
 }
 
-#about .about-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-#about .about-text p {
-    margin-bottom: 24px;
-    color: var(--medium-brown);
-}
-
-#about .about-text p:first-child {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--dark-brown);
-}
-
-#about .about-image {
-    text-align: center;
-    position: relative;
-}
-
-#about .about-image::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: 20px;
-    bottom: 20px;
-    background: linear-gradient(135deg, var(--primary-blue), var(--primary-teal));
-    border-radius: var(--border-radius);
-    z-index: -1;
-}
-
-#about .about-image img {
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-xl);
-    width: 100%;
-    min-height: 300px;
-    max-height: 400px;
-    object-fit: cover;
-    transition: var(--transition);
-}
-
-#about .about-image img:hover {
-    transform: translateY(-8px);
-}
-
-
-/* Sekcja Oferta z jasnym kremowym tłem jak "O nas" */
-#offer {
-    background: linear-gradient(135deg, var(--light-cream) 0%, #f5f2eb 100%);
-}
-
-/* Style dla sekcji Oferta identyczne jak dla sekcji O nas */
+#about .about-text,
 #offer .about-text {
     font-size: 1.1rem;
     line-height: 1.8;
 }
 
+#about .about-text p,
 #offer .about-text p {
     margin-bottom: 24px;
     color: var(--medium-brown);
 }
 
+#about .about-text p:first-child,
 #offer .about-text p:first-child {
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--dark-brown);
 }
 
+#about .about-image,
 #offer .about-image {
     text-align: center;
     position: relative;
 }
 
+#about .about-image::before,
 #offer .about-image::before {
     content: '';
     position: absolute;
@@ -372,11 +324,12 @@ header .container {
     left: -20px;
     right: 20px;
     bottom: 20px;
-    background: linear-gradient(135deg, var(--primary-blue), var(--primary-teal));
+    background: linear-gradient(135deg, var(--navy-blue), var(--navy-blue));
     border-radius: var(--border-radius);
     z-index: -1;
 }
 
+#about .about-image img,
 #offer .about-image img {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-xl);
@@ -387,6 +340,7 @@ header .container {
     transition: var(--transition);
 }
 
+#about .about-image img:hover,
 #offer .about-image img:hover {
     transform: translateY(-8px);
 }
@@ -613,10 +567,6 @@ form label[for="rodo"] {
     border-color: var(--light-navy);
 }
 
-.btn:hover::before {
-    left: 100%;
-}
-
 .btn:active {
     transform: translateY(0);
 }
@@ -657,26 +607,25 @@ footer a:hover {
         height: 50px;
     }
 
-    
-.hero {
-    background: linear-gradient(135deg,
-        rgba(30, 58, 95, 0.4) 0%,
-        rgba(21, 43, 71, 0.5) 50%,
-        rgba(44, 74, 112, 0.4) 100%),
-        url('hero-banner.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: var(--warm-white);
-    text-align: center;
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    scroll-margin-top: 120px;
-}
-.hero h1 {
+    .hero {
+        background: linear-gradient(135deg,
+            rgba(30, 58, 95, 0.4) 0%,
+            rgba(21, 43, 71, 0.5) 50%,
+            rgba(44, 74, 112, 0.4) 100%),
+            url('hero-banner.png') no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+        color: var(--warm-white);
+        text-align: center;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        scroll-margin-top: 120px;
+    }
+    .hero h1 {
         font-size: 1.8rem;
         padding: 0 10px;
     }
@@ -690,21 +639,28 @@ footer a:hover {
         margin-bottom: 30px;
     }
 
-    #about .about-image {
+    #about .about-content,
+    #offer .about-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    #about .about-image,
+    #offer .about-image {
         order: -1;
         margin-bottom: 15px;
     }
 
-    #about .about-image img {
+    #about .about-image img,
+    #offer .about-image img {
         min-height: 200px;
         max-height: 250px;
     }
 
-    #about .about-image::before {
+    #about .about-image::before,
+    #offer .about-image::before {
         display: none;
     }
-
-
 
     .service {
         padding: 24px 20px;
@@ -769,26 +725,25 @@ footer a:hover {
         height: 60px;
     }
 
-    
-.hero {
-    background: linear-gradient(135deg,
-        rgba(30, 58, 95, 0.4) 0%,
-        rgba(21, 43, 71, 0.5) 50%,
-        rgba(44, 74, 112, 0.4) 100%),
-        url('hero-banner.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: var(--warm-white);
-    text-align: center;
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    scroll-margin-top: 120px;
-}
-.hero h1 {
+    .hero {
+        background: linear-gradient(135deg,
+            rgba(30, 58, 95, 0.4) 0%,
+            rgba(21, 43, 71, 0.5) 50%,
+            rgba(44, 74, 112, 0.4) 100%),
+            url('hero-banner.png') no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+        color: var(--warm-white);
+        text-align: center;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        scroll-margin-top: 120px;
+    }
+    .hero h1 {
         font-size: 2.2rem;
     }
 
@@ -801,22 +756,23 @@ footer a:hover {
         margin-bottom: 40px;
     }
 
-    #about .about-content {
+    #about .about-content,
+    #offer .about-content {
         grid-template-columns: 1fr;
         gap: 25px;
     }
 
-    #about .about-image {
+    #about .about-image,
+    #offer .about-image {
         order: -1;
         margin-bottom: 20px;
     }
 
-    #about .about-image img {
+    #about .about-image img,
+    #offer .about-image img {
         min-height: 250px;
         max-height: 300px;
     }
-
-
 
     .services-grid {
         grid-template-columns: 1fr;
@@ -885,5 +841,7 @@ footer a:hover {
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
+    }
+}
     }
 }
