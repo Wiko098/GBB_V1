@@ -838,7 +838,7 @@ footer a:hover {
 
     #offer .offer-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 25px;
     }
 
     #offer .offer-image {
@@ -849,10 +849,6 @@ footer a:hover {
     #offer .offer-image img {
         min-height: 250px;
         max-height: 300px;
-    }
-
-    #offer .offer-image::before {
-        display: none;
     }
 
 
