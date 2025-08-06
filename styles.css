@@ -337,61 +337,6 @@ header .container {
     transform: translateY(-8px);
 }
 
-/* Sekcja Oferta z układem identycznym jak "O nas" */
-#offer .offer-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 60px;
-    margin-top: 40px;
-}
-
-#offer .offer-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-#offer .offer-text p {
-    margin-bottom: 24px;
-    color: var(--medium-brown);
-}
-
-#offer .offer-text p:first-child {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--dark-brown);
-}
-
-#offer .offer-image {
-    text-align: center;
-    position: relative;
-}
-
-#offer .offer-image::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: 20px;
-    bottom: 20px;
-    background: linear-gradient(135deg, var(--primary-blue), var(--primary-teal));
-    border-radius: var(--border-radius);
-    z-index: -1;
-}
-
-#offer .offer-image img {
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-xl);
-    width: 100%;
-    min-height: 300px;
-    max-height: 400px;
-    object-fit: cover;
-    transition: var(--transition);
-}
-
-#offer .offer-image img:hover {
-    transform: translateY(-8px);
-}
 
 /* Sekcja Usługi z nowoczesnymi kartami */
 #services {
