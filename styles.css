@@ -337,6 +337,111 @@ header .container {
     transform: translateY(-8px);
 }
 
+/* Sekcja Oferta z układem podobnym do "O nas" */
+#offer .offer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+#offer .offer-image {
+    text-align: center;
+    position: relative;
+}
+
+#offer .offer-image::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: 20px;
+    bottom: 20px;
+    background: linear-gradient(135deg, var(--primary-gold), var(--navy-blue));
+    border-radius: var(--border-radius);
+    z-index: -1;
+}
+
+#offer .offer-image img {
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-xl);
+    width: 100%;
+    min-height: 300px;
+    max-height: 400px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+#offer .offer-image img:hover {
+    transform: translateY(-8px);
+}
+
+#offer .offer-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#offer .offer-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--dark-brown);
+    margin-bottom: 20px;
+}
+
+#offer .offer-text p {
+    margin-bottom: 24px;
+    color: var(--medium-brown);
+}
+
+#offer .offer-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+#offer .feature {
+    background: var(--warm-white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--primary-gold);
+    transition: var(--transition);
+}
+
+#offer .feature:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+#offer .feature h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--dark-brown);
+    margin-bottom: 8px;
+}
+
+#offer .feature p {
+    font-size: 0.9rem;
+    color: var(--medium-brown);
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+#offer .offer-cta-text {
+    font-weight: 500;
+    color: var(--dark-brown);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(198, 168, 118, 0.1) 0%, rgba(30, 58, 95, 0.05) 100%);
+    border-radius: 8px;
+    border-left: 4px solid var(--navy-blue);
+}
+
 /* Sekcja Usługi z nowoczesnymi kartami */
 #services {
     background: linear-gradient(135deg, var(--light-cream) 0%, #f5f2eb 100%);
@@ -829,4 +934,3 @@ footer a:hover {
         scroll-behavior: smooth;
     }
 }
-
