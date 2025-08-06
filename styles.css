@@ -860,10 +860,6 @@ footer a:hover {
         display: none;
     }
 
-    #offer .offer-features {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
 
     .services-grid {
         grid-template-columns: 1fr;
