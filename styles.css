@@ -338,9 +338,9 @@ header .container {
 }
 
 
-/* Poprawka dla zdjęcia w sekcji Oferta */
-#offer .about-image img {
-    margin-left: -3px;
+/* Sekcja Oferta z jasnym kremowym tłem jak "O nas" */
+#offer {
+    background: linear-gradient(135deg, var(--light-cream) 0%, #f5f2eb 100%);
 }
 
 /* Sekcja Usługi z nowoczesnymi kartami */
