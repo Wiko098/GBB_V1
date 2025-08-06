@@ -338,6 +338,11 @@ header .container {
 }
 
 
+/* Poprawka dla zdjęcia w sekcji Oferta */
+#offer .about-image img {
+    margin-left: -3px;
+}
+
 /* Sekcja Usługi z nowoczesnymi kartami */
 #services {
     background: linear-gradient(135deg, var(--light-cream) 0%, #f5f2eb 100%);
