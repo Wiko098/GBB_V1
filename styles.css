@@ -104,7 +104,7 @@ header .container {
 }
 
 .logo-image {
-    height: 70px;
+    height: 100px;
     width: auto;
     filter: none;
     transition: var(--transition);
