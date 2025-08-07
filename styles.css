@@ -609,12 +609,11 @@ footer a:hover {
 
     .hero {
         background: linear-gradient(135deg,
-            rgba(30, 58, 95, 0.4) 0%,
-            rgba(21, 43, 71, 0.5) 50%,
-            rgba(44, 74, 112, 0.4) 100%),
-            url('hero-banner.png') no-repeat center center;
-        background-size: cover;
-        background-attachment: fixed;
+            rgba(74, 55, 40, 0.9) 0%,
+            rgba(198, 168, 118, 0.8) 25%,
+            rgba(30, 58, 95, 0.9) 50%,
+            rgba(21, 43, 71, 0.8) 75%,
+            rgba(74, 55, 40, 0.9) 100%);
         color: var(--warm-white);
         text-align: center;
         min-height: 60vh;
@@ -727,12 +726,11 @@ footer a:hover {
 
     .hero {
         background: linear-gradient(135deg,
-            rgba(30, 58, 95, 0.4) 0%,
-            rgba(21, 43, 71, 0.5) 50%,
-            rgba(44, 74, 112, 0.4) 100%),
-            url('hero-banner.png') no-repeat center center;
-        background-size: cover;
-        background-attachment: fixed;
+            rgba(74, 55, 40, 0.9) 0%,
+            rgba(198, 168, 118, 0.8) 25%,
+            rgba(30, 58, 95, 0.9) 50%,
+            rgba(21, 43, 71, 0.8) 75%,
+            rgba(74, 55, 40, 0.9) 100%);
         color: var(--warm-white);
         text-align: center;
         min-height: 60vh;
@@ -841,7 +839,5 @@ footer a:hover {
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
-    }
-}
     }
 }
