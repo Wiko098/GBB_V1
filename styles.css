@@ -1000,17 +1000,26 @@ footer a:hover {
     text-align: center;
 }
 
-.forgot-password {
-    color: var(--medium-brown);
-    text-decoration: none;
-    font-size: 0.95rem;
+.forgot-password-btn {
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
+    background: linear-gradient(135deg, var(--light-navy) 0%, var(--navy-blue) 100%);
+    color: var(--warm-white);
+    padding: 12px 24px;
+    border: 2px solid var(--medium-brown);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    letter-spacing: 0.3px;
 }
 
-.forgot-password:hover {
-    color: var(--navy-blue);
-    text-decoration: underline;
+.forgot-password-btn:hover {
+    background: linear-gradient(135deg, var(--navy-blue) 0%, var(--dark-navy) 100%);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--navy-blue);
 }
 
 /* Responsywność dla strony logowania */
