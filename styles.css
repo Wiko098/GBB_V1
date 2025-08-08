@@ -97,31 +97,25 @@ header .container {
     min-height: 120px;
 }
 
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.login-btn {
+.menu-login-btn {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    background: linear-gradient(135deg, var(--primary-gold) 0%, var(--dark-gold) 100%);
-    color: var(--warm-white);
-    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--primary-gold) 0%, var(--dark-gold) 100%) !important;
+    color: var(--warm-white) !important;
     border: 2px solid var(--navy-blue);
     border-radius: 8px;
-    text-decoration: none;
-    font-size: 0.9rem;
     box-shadow: var(--shadow-md);
-    transition: var(--transition);
-    white-space: nowrap;
+    margin-left: 8px;
 }
 
-.login-btn:hover {
+.menu-login-btn:hover {
+    background: linear-gradient(135deg, var(--accent-gold) 0%, var(--primary-gold) 100%) !important;
     transform: translateY(-2px);
-    background: linear-gradient(135deg, var(--accent-gold) 0%, var(--primary-gold) 100%);
     box-shadow: var(--shadow-lg);
+}
+
+.menu-login-btn::before {
+    display: none;
 }
 
 .logo {
