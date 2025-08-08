@@ -906,24 +906,14 @@ footer a:hover {
     backdrop-filter: blur(10px);
 }
 
-.login-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.login-header h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 2.2rem;
-    color: var(--dark-brown);
-    margin-bottom: 8px;
-    letter-spacing: -0.02em;
-}
-
-.login-header p {
-    color: var(--medium-brown);
-    font-size: 1.1rem;
-    font-weight: 400;
+.login-card {
+    background: var(--warm-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-xl), 0 0 40px rgba(0, 0, 0, 0.2);
+    padding: 48px 40px;
+    border: 1px solid rgba(198, 168, 118, 0.3);
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
 }
 
 .login-form {
