@@ -740,15 +740,6 @@ footer a:hover {
         width: 100%;
     }
 
-    .header-left {
-        gap: 12px;
-    }
-
-    .login-btn {
-        padding: 10px 16px;
-        font-size: 0.85rem;
-    }
-
     .container {
         width: 92%;
         padding: 0 12px;
@@ -1086,12 +1077,4 @@ footer a:hover {
         font-size: 1rem;
     }
 
-    .header-left {
-        gap: 8px;
-    }
-
-    .login-btn {
-        padding: 8px 12px;
-        font-size: 0.8rem;
-    }
 }
