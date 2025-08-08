@@ -634,6 +634,15 @@ footer a:hover {
         height: 50px;
     }
 
+    .header-left {
+        gap: 8px;
+    }
+
+    .login-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
     .hero {
         background: linear-gradient(135deg,
             rgba(74, 55, 40, 0.9) 0%,
