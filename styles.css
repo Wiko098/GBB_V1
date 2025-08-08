@@ -1060,8 +1060,13 @@ footer a:hover {
     }
 
     .login-btn-submit {
-        padding: 14px 24px;
-        font-size: 1rem;
+        padding: 18px 32px;
+        font-size: 1.2rem;
+    }
+
+    .forgot-password-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 
 }
