@@ -897,14 +897,6 @@ footer a:hover {
     margin: 0 auto;
 }
 
-.login-card {
-    background: var(--warm-white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-xl), 0 0 40px rgba(0, 0, 0, 0.2);
-    padding: 48px 40px;
-    border: 1px solid rgba(198, 168, 118, 0.3);
-    backdrop-filter: blur(10px);
-}
 
 .login-card {
     background: var(--warm-white);
