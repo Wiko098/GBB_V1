@@ -759,15 +759,15 @@ footer a:hover {
     }
 
     .menu-login-btn {
-        margin-left: 0 !important;
-        padding: 10px 12px !important;
+        margin: 8px 0 !important;
+        padding: 12px 15px !important;
         font-size: 0.9rem !important;
-        width: 90% !important;
-        max-width: 250px !important;
-        margin: 8px auto !important;
+        width: 100% !important;
+        max-width: none !important;
         display: block !important;
         text-align: center !important;
         box-sizing: border-box !important;
+        border-radius: 6px !important;
     }
 
     .container {
