@@ -743,6 +743,17 @@ footer a:hover {
         width: 100%;
     }
 
+    .menu-login-btn {
+        margin-left: 0 !important;
+        padding: 12px 16px !important;
+        font-size: 0.95rem !important;
+        width: calc(100% - 40px) !important;
+        max-width: 280px !important;
+        margin: 8px auto !important;
+        display: block !important;
+        text-align: center !important;
+    }
+
     .container {
         width: 92%;
         padding: 0 12px;
