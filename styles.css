@@ -734,9 +734,12 @@ footer a:hover {
         position: absolute;
         top: 100%;
         left: 0;
-        padding: 20px 0;
+        right: 0;
+        padding: 20px 15px;
         border-radius: 0 0 12px 12px;
         box-shadow: var(--shadow-lg);
+        overflow: visible;
+        box-sizing: border-box;
     }
 
     #nav-toggle:checked ~ nav .menu {
