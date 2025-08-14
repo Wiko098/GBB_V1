@@ -7,17 +7,23 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <a href="index.html" class="logo">
-        <img src="Logo.png" alt="Logo Galicyjskie Biuro Brokerskie" class="logo-image"/>
-      </a>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Strona główna</a></li>
-          <li><button id="logoutBtn" class="menu-login-btn" style="cursor:pointer">Wyloguj</button></li>
-        </ul>
-      </nav>
-    </div>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="Logo.png" alt="Logo Galicyjskie Biuro Brokerskie" class="logo-image"/>
+    </a>
+
+    <!-- burger/toggle jak na stronie głównej -->
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Otwórz menu">☰</label>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="dashboard.html" class="menu-login-btn">Panel klienta</a></li>
+        <li><button id="logoutBtn" class="menu-login-btn" style="cursor:pointer">Wyloguj</button></li>
+      </ul>
+    </nav>
+  </div>
   </header>
 
   <main class="section">
