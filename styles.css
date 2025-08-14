@@ -1097,3 +1097,34 @@ footer a:hover {
     }
 
 }
+/* === FIX: układ i rozmiar przycisków po zalogowaniu === */
+#menuSignedIn {
+  display: flex;
+  align-items: center;
+  gap: 8px;               /* odstęp między przyciskami */
+}
+
+/* ujednolicenie wyglądu <a> i <button> */
+#menuSignedIn .menu-login-btn {
+  display: inline-flex;   /* dzięki temu oba zachowują się tak samo */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 1;
+  height: 44px;           /* jednakowa wysokość */
+  padding: 0 20px;        /* padding poziomy, pion = z wysokości */
+  margin: 0 !important;   /* nadpisuje ewentualne style inline */
+}
+
+/* mobile – możesz chcieć ułożyć je pionowo i na pełną szerokość */
+@media (max-width: 768px) {
+  #menuSignedIn {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #menuSignedIn .menu-login-btn {
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+  }
+}
