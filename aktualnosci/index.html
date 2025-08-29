@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aktualności i Raporty | Galicyjskie Biuro Brokerskie</title>
+  <meta name="description" content="Aktualności i raporty Galicyjskiego Biura Brokerskiego: rynek ubezpieczeń, odszkodowania rolnicze, bezpieczeństwo majątku firmowego.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/png" href="https://cdn.builder.io/api/v1/image/assets%2F06d7d275ef834dcd8a8b9ca830b4009c%2Fdaf4bab5e87b4135a558f67fd6642c2b?format=webp&width=32">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../Logo.png" alt="Logo Galicyjskie Biuro Brokerskie" class="logo-image">
+      </a>
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Otwórz menu">☰</label>
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html#home">Strona główna</a></li>
+          <li><a href="../index.html#about">O nas</a></li>
+          <li><a href="../index.html#offer">Oferta</a></li>
+          <li><a href="../index.html#services">Usługi</a></li>
+          <li><a href="./">Aktualności</a></li>
+          <li><a href="../index.html#contact">Kontakt</a></li>
+          <li id="menuSignedOut"><a href="../login.html" class="menu-login-btn">Zaloguj się</a></li>
+          <li id="menuSignedIn" style="display:none">
+            <a href="../dashboard.html" class="menu-login-btn">Panel klienta</a>
+            <button id="menuLogout" class="menu-login-btn" style="cursor:pointer">Wyloguj</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container news-hero-title">
+        <h1>Aktualności i Raporty</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Najnowsze publikacje</h2>
+        <div class="news-grid">
+          <!-- 8 marca 2025 -->
+          <article class="news-card">
+            <img class="news-thumb" src="https://images.pexels.com/photos/3874347/pexels-photo-3874347.jpeg" alt="Magazyn i park maszynowy - ubezpieczenie mienia firmowego">
+            <div class="news-content">
+              <div class="news-meta">8 marca 2025</div>
+              <h3 class="news-title"><a href="raport-bezpieczenstwo-majatku-firmy.html">Bezpieczeństwo majątku firmowego: praktyczny przewodnik po polisach mienia 2025</a></h3>
+              <p class="news-excerpt">Jak skutecznie zabezpieczyć majątek przedsiębiorstwa przed po��arem, zalaniem, włamaniem czy przestojem w działalności. Porównujemy zakresy, franszyzy i kluczowe klauzule, które realnie zwiększają ochronę.</p>
+              <a class="btn" href="raport-bezpieczenstwo-majatku-firmy.html">Czytaj raport</a>
+            </div>
+          </article>
+
+          <!-- 15 czerwca 2025 -->
+          <article class="news-card">
+            <img class="news-thumb" src="https://images.pexels.com/photos/4968396/pexels-photo-4968396.jpeg" alt="Cyfrowa likwidacja szkód i analiza danych w ubezpieczeniach">
+            <div class="news-content">
+              <div class="news-meta">15 czerwca 2025</div>
+              <h3 class="news-title"><a href="raport-trendy-ubezpieczeniowe-2025.html">Trendy ubezpieczeniowe 2025: wyższe sumy gwarancyjne i cyfrowa likwidacja szkód</a></h3>
+              <p class="news-excerpt">Rok 2025 przynosi przyspieszenie cyfryzacji procesów likwidacyjnych oraz wzrost sum gwarancyjnych w kluczowych polisach. Sprawdzamy, które branże i klienci skorzystają najbardziej oraz jak przygotować portfel polis do nowych realiów.</p>
+              <a class="btn" href="raport-trendy-ubezpieczeniowe-2025.html">Czytaj raport</a>
+            </div>
+          </article>
+
+          <!-- 2 października 2024 -->
+          <article class="news-card">
+            <img class="news-thumb" src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg" alt="Pole uprawne w czasie suszy - ubezpieczenia rolnicze">
+            <div class="news-content">
+              <div class="news-meta">2 października 2024</div>
+              <h3 class="news-title"><a href="raport-odszkodowania-rolnicze-2024.html">Odszkodowania w rolnictwie 2024: susza i szkody łowieckie</a></h3>
+              <p class="news-excerpt">Przegląd najczęstszych szkód w rolnictwie w 2024 r. oraz checklisty dokumentów, które przyspieszą wypłatę należnych świadczeń. Podpowiadamy, jak przygotować zgłoszenie i na co zwrócić uwagę przy weryfikacji decyzji TU.</p>
+              <a class="btn" href="raport-odszkodowania-rolnicze-2024.html">Czytaj raport</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Galicyjskie Biuro Brokerskie Sp. z o.o. – Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBaT_l1T7uZuOpRKoPO5mM-TmSxxJ-RqBE",
+      authDomain: "gbb---ubezpieczenia.firebaseapp.com",
+      projectId: "gbb---ubezpieczenia",
+      storageBucket: "gbb---ubezpieczenia.firebasestorage.app",
+      messagingSenderId: "401341596644",
+      appId: "1:401341596644:web:c6060f8ab6ae6eb017bdf1",
+      measurementId: "G-V259MFTZPW"
+    };
+
+    let firebaseOk = true; 
+    let auth;
+    try { 
+      const app = initializeApp(firebaseConfig);
+      auth = getAuth(app); 
+    } catch(e) { 
+      firebaseOk = false; 
+    }
+
+    const $out = document.getElementById('menuSignedOut');
+    const $in = document.getElementById('menuSignedIn');
+    const showIn = (v) => { 
+      if (!$out || !$in) return;
+      $in.style.display = v ? '' : 'none'; 
+      $out.style.display = v ? 'none' : ''; 
+    };
+
+    if (firebaseOk) {
+      onAuthStateChanged(auth, (user) => showIn(!!user));
+      const logoutBtn = document.getElementById('menuLogout');
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', async () => { 
+          await signOut(auth); 
+        });
+      }
+    } else {
+      const demo = JSON.parse(localStorage.getItem('gbb_demo_auth') || 'null');
+      showIn(!!demo);
+      const logoutBtn = document.getElementById('menuLogout');
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', () => {
+          localStorage.removeItem('gbb_demo_auth');
+          showIn(false);
+        });
+      }
+    }
+  </script>
+</body>
+</html>
