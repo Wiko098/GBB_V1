@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trendy ubezpieczeniowe 2025 | GBB</title>
+  <meta name="description" content="Raport: Trendy ubezpieczeniowe 2025 – cyfrowa likwidacja szkód, wzrost sum gwarancyjnych i nowe wymagania dla klientów.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/png" href="https://cdn.builder.io/api/v1/image/assets%2F06d7d275ef834dcd8a8b9ca830b4009c%2Fdaf4bab5e87b4135a558f67fd6642c2b?format=webp&width=32">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../Logo.png" alt="Logo Galicyjskie Biuro Brokerskie" class="logo-image">
+      </a>
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Otwórz menu">☰</label>
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html#home">Strona główna</a></li>
+          <li><a href="../index.html#about">O nas</a></li>
+          <li><a href="../index.html#offer">Oferta</a></li>
+          <li><a href="../index.html#services">Usługi</a></li>
+          <li><a href="./">Aktualności</a></li>
+          <li><a href="../index.html#contact">Kontakt</a></li>
+          <li id="menuSignedOut"><a href="../login.html" class="menu-login-btn">Zaloguj się</a></li>
+          <li id="menuSignedIn" style="display:none">
+            <a href="../dashboard.html" class="menu-login-btn">Panel klienta</a>
+            <button id="menuLogout" class="menu-login-btn" style="cursor:pointer">Wyloguj</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <header class="article-header">
+          <h1>Trendy ubezpieczeniowe 2025: wyższe sumy gwarancyjne i cyfrowa likwidacja szkód</h1>
+          <div class="article-meta">
+            <span>Data: 15 czerwca 2025</span>
+            <span>Kategoria: Rynek ubezpieczeń</span>
+            <span>Lokalizacja: Polska</span>
+          </div>
+        </header>
+
+        <img class="featured-image" src="https://images.pexels.com/photos/4968396/pexels-photo-4968396.jpeg" alt="Cyfrowa likwidacja szkód i analiza danych w ubezpieczeniach">
+
+        <article class="article-content">
+          <p>Dynamiczne zmiany otoczenia gospodarczego i regulacyjnego sprawiają, że rok 2025 staje się przełomowy dla wielu segmentów rynku ubezpieczeń. Rosnące koszty napraw i usług, a także inflacja reasekuracyjna wymuszają aktualizację sum ubezpieczenia oraz weryfikację kluczowych klauzul w polisach.</p>
+
+          <h2>Cyfryzacja procesów likwidacyjnych</h2>
+          <p>Coraz więcej towarzystw wdraża zdalne oględziny, wideoweryfikację oraz automatyczną wycenę szkód. Dzięki temu skraca się czas oczekiwania na decyzję, ale rośnie znaczenie kompletności dokumentacji przesyłanej przez klienta. W praktyce dobrze przygotowany wniosek wraz z materiałem dowodowym to szybsza i wyższa wypłata.</p>
+
+          <h2>Wyższe sumy gwarancyjne i indeksacja</h2>
+          <p>W polisach mienia i OC przedsiębiorstw standardem staje się indeksacja wartości odtworzeniowych oraz podnoszenie limitów na kluczowe ryzyka (pożar, zalanie, przerwa w działalności). Rekomendujemy przegląd portfela polis minimum raz w roku – szczególnie w branżach o wysokiej ekspozycji na wzrost cen materiałów i usług.</p>
+
+          <h2>Rola brokera w 2025</h2>
+          <p>Broker wspiera klientów nie tylko w negocjacjach warunków, ale również w projektowaniu właściwego zakresu odpowiedzialności oraz w optymalizacji franszyz i udziałów własnych. Rosnące różnice w OWU między TU sprawiają, że porównanie ofert bez wsparcia eksperta jest coraz trudniejsze.</p>
+
+          <p>Jeśli chcesz omówić zmiany w polisach lub przygotować audyt ubezpieczeniowy – skontaktuj się z nami. Zapewnimy porównanie ofert i rekomendacje dopasowane do skali i profilu ryzyka Twojej działalności.</p>
+          <div class="back-to-news"><a class="btn" href="./">Powrót do aktualności</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Galicyjskie Biuro Brokerskie Sp. z o.o. – Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBaT_l1T7uZuOpRKoPO5mM-TmSxxJ-RqBE",
+      authDomain: "gbb---ubezpieczenia.firebaseapp.com",
+      projectId: "gbb---ubezpieczenia",
+      storageBucket: "gbb---ubezpieczenia.firebasestorage.app",
+      messagingSenderId: "401341596644",
+      appId: "1:401341596644:web:c6060f8ab6ae6eb017bdf1",
+      measurementId: "G-V259MFTZPW"
+    };
+
+    let firebaseOk = true; 
+    let auth;
+    try { 
+      const app = initializeApp(firebaseConfig);
+      auth = getAuth(app); 
+    } catch(e) { 
+      firebaseOk = false; 
+    }
+
+    const $out = document.getElementById('menuSignedOut');
+    const $in = document.getElementById('menuSignedIn');
+    const showIn = (v) => { 
+      if (!$out || !$in) return;
+      $in.style.display = v ? '' : 'none'; 
+      $out.style.display = v ? 'none' : ''; 
+    };
+
+    if (firebaseOk) {
+      onAuthStateChanged(auth, (user) => showIn(!!user));
+      const logoutBtn = document.getElementById('menuLogout');
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', async () => { 
+          await signOut(auth); 
+        });
+      }
+    } else {
+      const demo = JSON.parse(localStorage.getItem('gbb_demo_auth') || 'null');
+      showIn(!!demo);
+      const logoutBtn = document.getElementById('menuLogout');
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', () => {
+          localStorage.removeItem('gbb_demo_auth');
+          showIn(false);
+        });
+      }
+    }
+  </script>
+</body>
+</html>
