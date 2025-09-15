@@ -8,3 +8,4 @@ Sitemap: https://gbb-ubezpieczenia.com/sitemap.xml
 
 # Crawl-delay for better server performance
 Crawl-delay: 1
+# dsdsdsds
