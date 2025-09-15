@@ -214,6 +214,43 @@ header .container {
     width: 80%;
 }
 
+/* Ikony social media w nagłówku */
+.header-social {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark-brown);
+    z-index: 2;
+}
+.header-social .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: inherit;
+    transition: var(--transition);
+}
+.header-social .social-link:hover {
+    background: rgba(198, 168, 118, 0.15);
+    transform: translateY(-2px);
+}
+.header-social svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+@media (max-width: 768px) {
+    .header-social {
+        right: 60px;
+        top: 8px;
+    }
+}
+
 /* Sekcja hero z nowoczesnym designem */
 
 .hero {
