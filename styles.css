@@ -107,6 +107,7 @@ header .container {
     box-shadow: var(--shadow-md) !important;
     margin-left: 12px !important;
     padding: 12px 20px !important;
+    cursor: pointer !important;
 }
 
 .menu-login-btn:hover {
@@ -1136,24 +1137,26 @@ footer a:hover {
 }
 /* === FIX: układ i rozmiar przycisków po zalogowaniu === */
 #menuSignedIn {
-  display: flex;
+  display: none;
   align-items: center;
-  gap: 8px;               /* odstęp między przyciskami */
+  gap: 8px;
 }
 
-/* ujednolicenie wyglądu <a> i <button> */
+#menuSignedIn.show {
+  display: flex;
+}
+
 #menuSignedIn .menu-login-btn {
-  display: inline-flex;   /* dzięki temu oba zachowują się tak samo */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   line-height: 1;
-  height: 44px;           /* jednakowa wysokość */
-  padding: 0 20px;        /* padding poziomy, pion = z wysokości */
-  margin: 0 !important;   /* nadpisuje ewentualne style inline */
+  height: 44px;
+  padding: 0 20px;
+  margin: 0 !important;
 }
 
-/* mobile – możesz chcieć ułożyć je pionowo i na pełną szerokość */
 @media (max-width: 768px) {
   #menuSignedIn {
     flex-direction: column;
@@ -1292,3 +1295,22 @@ footer a:hover {
     height: 180px;
   }
 }
+
+/* Language switcher */
+.header-lang-switch {
+  position: absolute;
+  top: 8px;
+  right: 68px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 2;
+}
+.header-lang-switch .lang-sep { color: var(--dark-brown); opacity: 0.6; }
+.lang-btn { padding: 8px 12px !important; font-size: 0.9rem !important; line-height: 1; height: 34px; }
+.lang-btn.lang-active { outline: 2px solid var(--light-navy); border-color: var(--light-navy) !important; font-weight: 700 !important; }
+@media (max-width: 768px) { .header-lang-switch { right: 110px; } }
+
+/* i18n ready state */
+html.i18n-not-ready [data-i18n-key], html.i18n-not-ready [data-i18n-attr] { visibility: hidden; }
+html.i18n-ready [data-i18n-key], html.i18n-ready [data-i18n-attr] { visibility: visible; }
