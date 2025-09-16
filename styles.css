@@ -1307,8 +1307,21 @@ footer a:hover {
   z-index: 2;
 }
 .header-lang-switch .lang-sep { color: var(--dark-brown); opacity: 0.6; }
-.lang-btn { padding: 8px 12px !important; font-size: 0.9rem !important; line-height: 1; height: 34px; }
-.lang-btn.lang-active { outline: 2px solid var(--light-navy); border-color: var(--light-navy) !important; font-weight: 700 !important; }
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  color: inherit;
+  transition: var(--transition);
+  font-weight: 600;
+}
+.lang-btn:hover { background: rgba(198, 168, 118, 0.15); transform: translateY(-2px); }
+.lang-btn.lang-active { outline: 2px solid var(--light-navy); font-weight: 700; }
 @media (max-width: 768px) { .header-lang-switch { right: 110px; } }
 
 /* i18n ready state */
