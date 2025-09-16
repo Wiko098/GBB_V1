@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="i18n-not-ready login-page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Logowanie do Galicyjskie Biuro Brokerskie - portal klienta">
     <meta name="robots" content="noindex, nofollow">
-    <title>Logowanie - Galicyjskie Biuro Brokerskie</title>
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:locale:alternate" content="en_US">
+    <link rel="canonical" href="https://gbb-ubezpieczenia.com/login.html">
+    <link rel="alternate" hreflang="pl" href="https://gbb-ubezpieczenia.com/login.html?lang=pl">
+    <link rel="alternate" hreflang="en" href="https://gbb-ubezpieczenia.com/login.html?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://gbb-ubezpieczenia.com/login.html">
+    <title data-i18n-key="login_page_title">Logowanie - Galicyjskie Biuro Brokerskie</title>
     <link rel="icon" type="image/png" href="https://cdn.builder.io/api/v1/image/assets%2F06d7d275ef834dcd8a8b9ca830b4009c%2Fdaf4bab5e87b4135a558f67fd6642c2b?format=webp&width=32">
     <link rel="stylesheet" href="styles.css">
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
@@ -16,19 +22,19 @@
 <link rel="icon" sizes="192x192" href="/favicon_io/android-chrome-192x192.png">
 <link rel="icon" sizes="512x512" href="/favicon_io/android-chrome-512x512.png">
 </head>
-<body class="login-page">
+<body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo">
-                <img src="Logo.png" alt="Logo Galicyjskie Biuro Brokerskie" class="logo-image">
+            <a href="index.html" class="logo" data-i18n-attr="title:logo_title">
+                <img src="Logo.png" alt="Logo Galicyjskie Biuro Brokerskie" class="logo-image" data-i18n-attr="alt:logo_alt">
             </a>
-            <div class="header-social" aria-label="Social media">
-  <a class="social-link" href="https://www.facebook.com/profile.php?id=61569936570074" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <div class="header-social" aria-label="Social media" data-i18n-attr="aria-label:social_aria_label">
+  <a class="social-link" href="https://www.facebook.com/profile.php?id=61569936570074" target="_blank" rel="noopener noreferrer" aria-label="Facebook" data-i18n-attr="aria-label:facebook_aria_label">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.03 3.68 9.2 8.48 9.94v-7.03H7.9v-2.9h2.58V9.41c0-2.55 1.52-3.96 3.85-3.96 1.12 0 2.29.2 2.29.2v2.52h-1.29c-1.27 0-1.66.79-1.66 1.6v1.92h2.83l-.45 2.9h-2.38V22c4.8-.74 8.48-4.91 8.48-9.94z"/>
     </svg>
   </a>
-  <a class="social-link" href="https://www.instagram.com/galicyjskie_biuro_brokerske?igsh=c3BkZmNoMWt2ZWwx&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+  <a class="social-link" href="https://www.instagram.com/galicyjskie_biuro_brokerske?igsh=c3BkZmNoMWt2ZWwx&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-i18n-attr="aria-label:instagram_aria_label">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5.25"/>
       <path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
@@ -36,9 +42,14 @@
     </svg>
   </a>
 </div>
+<div class="header-lang-switch" aria-label="Zmień język">
+  <button class="lang-btn" data-lang="pl" aria-label="Zmień język na polski" type="button">PL</button>
+  <span class="lang-sep" aria-hidden="true">|</span>
+  <button class="lang-btn" data-lang="en" aria-label="Change language to English" type="button">EN</button>
+</div>
 <nav>
                 <ul class="menu">
-                    <li><a href="index.html">Powrót do strony głównej</a></li>
+                    <li><a href="index.html" data-i18n-key="back_home">Powrót do strony głównej</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,26 +61,26 @@
                 
                 <form class="login-form" action="/login" method="POST">
                     <div class="form-group">
-                        <label for="email">Adres e-mail</label>
-                        <input type="email" id="email" name="email" required autocomplete="email">
+                        <label for="email" data-i18n-key="form_email_label">Adres e-mail</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" data-i18n-attr="placeholder:email_placeholder">
                     </div>
                     
                     <div class="form-group">
-                        <label for="password">Hasło</label>
-                        <input type="password" id="password" name="password" required autocomplete="current-password">
+                        <label for="password" data-i18n-key="form_password_label">Hasło</label>
+                        <input type="password" id="password" name="password" required autocomplete="current-password" data-i18n-attr="placeholder:password_placeholder">
                     </div>
                     
                     <div class="form-options">
                         <label class="checkbox-label">
                             <input type="checkbox" id="remember" name="remember">
-                            Zapamiętaj mnie
+                            <span data-i18n-key="remember_me">Zapamiętaj mnie</span>
                         </label>
                     </div>
                     
-                    <button type="submit" class="login-btn-submit">Zaloguj się</button>
+                    <button type="submit" class="login-btn-submit" data-i18n-key="login">Zaloguj się</button>
 
                     <div class="form-footer">
-                        <button type="button" class="forgot-password-btn" onclick="window.location.href='mailto:gbb@gbb.com.pl?subject=Reset hasła'">Nie pamiętasz hasła?</button>
+                        <button type="button" class="forgot-password-btn" id="forgotBtn" data-i18n-key="forgot_password">Nie pamiętasz hasła?</button>
                     </div>
                 </form>
             </div>
@@ -78,16 +89,104 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 Galicyjskie Biuro Brokerskie Sp. z o.o. – Wszelkie prawa zastrzeżone.</p>
+            <p data-i18n-key="footer_rights">© 2025 Galicyjskie Biuro Brokerskie Sp. z o.o. – Wszelkie prawa zastrzeżone.</p>
         </div>
     </footer>
-    <script type="module">
-  // ======= [A] Firebase (prawdziwe logowanie) =======
-  // 1) W konsoli Firebase utwórz projekt i włącz Email/Hasło w: Authentication → Sign-in method.
-  // 2) Uzupełnij poniższą konfigurację.
 
+    <script>
+      const I18N = {
+        pl: {
+          login_page_title: "Logowanie - Galicyjskie Biuro Brokerskie",
+          back_home: "Powrót do strony głównej",
+          form_email_label: "Adres e-mail",
+          form_password_label: "Hasło",
+          email_placeholder: "Wpisz adres e-mail",
+          password_placeholder: "Wpisz hasło",
+          remember_me: "Zapamiętaj mnie",
+          login: "Zaloguj się",
+          forgot_password: "Nie pamiętasz hasła?",
+          footer_rights: "© 2025 Galicyjskie Biuro Brokerskie Sp. z o.o. – Wszelkie prawa zastrzeżone.",
+          social_aria_label: "Social media",
+          facebook_aria_label: "Facebook",
+          instagram_aria_label: "Instagram",
+          logo_alt: "Logo Galicyjskie Biuro Brokerskie",
+          logo_title: "Galicyjskie Biuro Brokerskie - strona główna",
+          og_locale: "pl_PL",
+          msg_logging_in: "Logowanie…",
+          msg_logged_in: "Zalogowano pomyślnie. Przekierowuję…",
+          msg_invalid_demo: "Nieprawidłowe dane (demo). Użyj demo@gbb.com.pl / Demo123! lub skonfiguruj Firebase.",
+          msg_error_default: "Błąd logowania. Spróbuj ponownie.",
+          err_invalid: "Nieprawidłowy e‑mail lub hasło.",
+          err_user_not_found: "Użytkownik nie istnieje.",
+          err_too_many: "Za dużo prób. Spróbuj później."
+        },
+        en: {
+          login_page_title: "Login - Galicyjskie Biuro Brokerskie",
+          back_home: "Back to homepage",
+          form_email_label: "Email address",
+          form_password_label: "Password",
+          email_placeholder: "Enter your email",
+          password_placeholder: "Enter your password",
+          remember_me: "Remember me",
+          login: "Log in",
+          forgot_password: "Forgot password?",
+          footer_rights: "© 2025 Galicyjskie Biuro Brokerskie Sp. z o.o. – All rights reserved.",
+          social_aria_label: "Social media",
+          facebook_aria_label: "Facebook",
+          instagram_aria_label: "Instagram",
+          logo_alt: "Galicyjskie Biuro Brokerskie logo",
+          logo_title: "Galicyjskie Biuro Brokerskie - home",
+          og_locale: "en_US",
+          msg_logging_in: "Logging in…",
+          msg_logged_in: "Logged in. Redirecting…",
+          msg_invalid_demo: "Invalid data (demo). Use demo@gbb.com.pl / Demo123! or configure Firebase.",
+          msg_error_default: "Login error. Please try again.",
+          err_invalid: "Invalid email or password.",
+          err_user_not_found: "User not found.",
+          err_too_many: "Too many attempts. Try later."
+        }
+      };
+
+      function setQueryLangParam(lang) {
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', lang);
+        history.replaceState({}, '', url.toString());
+      }
+
+      function applyLang(lang){
+        const supported=['pl','en'];
+        const target=supported.includes(lang)?lang:'pl';
+        const dict=I18N[target];
+        document.documentElement.setAttribute('lang', target);
+        document.querySelector('meta[property="og:locale"]').setAttribute('content', dict.og_locale);
+        document.querySelectorAll('[data-i18n-key]').forEach(el=>{const k=el.getAttribute('data-i18n-key'); if(dict[k]!==undefined) el.textContent=dict[k];});
+        document.querySelectorAll('[data-i18n-attr]').forEach(el=>{el.getAttribute('data-i18n-attr').split(';').forEach(p=>{const [a,k]=p.split(':').map(s=>s.trim()); if(a&&k&&dict[k]!==undefined) el.setAttribute(a,dict[k]);});});
+        document.querySelectorAll('.lang-btn').forEach(btn=>{const act=btn.getAttribute('data-lang')===target; btn.classList.toggle('lang-active', act); btn.setAttribute('aria-pressed', String(act));});
+        localStorage.setItem('site_lang', target);
+        setQueryLangParam(target);
+        document.documentElement.classList.add('i18n-ready');
+        document.documentElement.classList.remove('i18n-not-ready');
+        window.__currentLang = target;
+      }
+
+      document.addEventListener('DOMContentLoaded', ()=>{
+        document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click', ()=>applyLang(btn.getAttribute('data-lang'))));
+        const url = new URL(location.href); const urlLang=url.searchParams.get('lang'); const ls=localStorage.getItem('site_lang'); const initial=urlLang||ls||(navigator.language||'pl').toLowerCase().startsWith('pl')?'pl':'en';
+        applyLang(initial);
+        const forgot=document.getElementById('forgotBtn');
+        if(forgot){
+          forgot.addEventListener('click',()=>{
+            const lang=window.__currentLang||'pl';
+            const subject=lang==='pl'? 'Reset hasła' : 'Password reset';
+            location.href=`mailto:gbb@gbb.com.pl?subject=${encodeURIComponent(subject)}`;
+          });
+        }
+      });
+    </script>
+
+    <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+  import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
   const firebaseConfig = {
   apiKey: "AIzaSyBaT_l1T7uZuOpRKoPO5mM-TmSxxJ-RqBE",
@@ -100,73 +199,54 @@
 };
 
   let app, auth;
-  try {
-    app = initializeApp(firebaseConfig);
-    auth = getAuth(app);
-  } catch (e) {
-    console.warn("Firebase nie skonfigurowany – przełączam na tryb demo.", e);
-  }
+  try { app = initializeApp(firebaseConfig); auth = getAuth(app);} catch (e) { console.warn("Firebase nie skonfigurowany – tryb demo.", e); }
 
   const form = document.querySelector(".login-form");
   const emailInput = document.getElementById("email");
   const passwordInput = document.getElementById("password");
 
   const msg = document.createElement("div");
-  msg.id = "login-msg";
-  msg.setAttribute("role", "status");
-  msg.style.marginTop = "12px";
-  msg.style.textAlign = "center";
+  msg.id = "login-msg"; msg.setAttribute("role","status"); msg.style.marginTop = "12px"; msg.style.textAlign = "center";
   form.appendChild(msg);
 
-  const setMsg = (text, ok=false) => {
-    msg.textContent = text;
-    msg.style.color = ok ? "#0a7c2f" : "#8b0000";
-  };
+  const dict = ()=> (window.__currentLang==='en'? I18N.en : I18N.pl);
+  const setMsg = (textKey, ok=false) => { const t = dict()[textKey] || textKey; msg.textContent = t; msg.style.color = ok ? "#0a7c2f" : "#8b0000"; };
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const email = emailInput.value.trim();
     const password = passwordInput.value;
 
-    setMsg("Logowanie…");
+    setMsg('msg_logging_in');
 
-    // Jeżeli Firebase poprawnie zainicjalizowany – użyj go.
     if (auth) {
       try {
         await signInWithEmailAndPassword(auth, email, password);
-        setMsg("Zalogowano pomyślnie. Przekierowuję…", true);
+        setMsg('msg_logged_in', true);
         window.location.href = "dashboard.html";
         return;
       } catch (err) {
-        console.error(err);
         const map = {
-          "auth/invalid-credential": "Nieprawidłowy e‑mail lub hasło.",
-          "auth/user-not-found": "Użytkownik nie istnieje.",
-          "auth/too-many-requests": "Za dużo prób. Spróbuj później.",
+          "auth/invalid-credential": 'err_invalid',
+          "auth/user-not-found": 'err_user_not_found',
+          "auth/too-many-requests": 'err_too_many',
         };
-        setMsg(map[err.code] || "Błąd logowania. Spróbuj ponownie.");
+        setMsg(map[err.code] || 'msg_error_default');
       }
     }
 
-    // ======= [B] Tryb demo (fallback) =======
-    // DEMO: prosta weryfikacja po stronie klienta. NIE do produkcji.
     const DEMO = { email: "demo@gbb.com.pl", password: "Demo123!" };
     if (email === DEMO.email && password === DEMO.password) {
       localStorage.setItem("gbb_demo_auth", JSON.stringify({ email, ts: Date.now() }));
-      setMsg("Zalogowano (demo). Przekierowuję…", true);
+      setMsg('msg_logged_in', true);
       window.location.href = "dashboard.html";
     } else {
-      setMsg("Nieprawidłowe dane (demo). Użyj demo@gbb.com.pl / Demo123! lub skonfiguruj Firebase.");
+      setMsg('msg_invalid_demo');
     }
   });
 
-  // Pokaż stan logowania (Firebase)
   if (auth) {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        console.log("Zalogowany jako:", user.email);
-      }
-    });
+    onAuthStateChanged(auth, (user) => { if (user) { /* noop */ } });
   }
 </script>
 </body>
