@@ -1137,13 +1137,9 @@ footer a:hover {
 }
 /* === FIX: układ i rozmiar przycisków po zalogowaniu === */
 #menuSignedIn {
-  display: none;
+  display: flex;
   align-items: center;
   gap: 8px;
-}
-
-#menuSignedIn.show {
-  display: flex;
 }
 
 #menuSignedIn .menu-login-btn {
